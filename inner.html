@@ -25,7 +25,31 @@
   <main class="container">
     <h1 class="vision-hidden">Подбор отеля</h1>
     <section class="filtres">
-      <!-- Здесь будут фильтры -->
+      <form class="filter" action="https://echo.htmlacademy.ru" method="GET" oninput="priceoutput.value=price.value">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <input type="checkbox" name="pool" id="pool" checked>
+          <label for="pool">Бассейн</label>
+          <input type="checkbox" name="parking" id="parking">
+          <label for="parking">Парковка</label>
+          <input type="checkbox" name="wifi" id="wifi">
+          <label for="wifi">Wi-Fi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <input type="checkbox" name="inn" id="inn" checked>
+          <label for="inn">Гостиница</label>
+          <input type="checkbox" name="motel" id="motel" checked>
+          <label for="motel">Мотель</label>
+          <input type="checkbox" name="apartments" id="apartments" checked>
+          <label for="apartments">Апартаменты</label>
+        </fieldset>
+        <div>
+          <label>Стоимость в сутки (Р):</label>
+         <!-- Здесь будет диапазон, еще не придумала, как его сделать -->
+        </div>
+      </form>
+      <button class="button filter-button" type="submit">Показать</button>
     </section>
 
     <h2 class="vision-hidden">Наши отели</h2>
