@@ -82,17 +82,36 @@
           </0l>
       </section>
 
-      <div class="search">
+      <section class="modal modal-search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <span class="button">ПОИСК ГОСТИНИЦЫ В Седоне</span>
-        <!-- Здесь будет форма -->
-      </div>
+        <button class="button" type="button">ПОИСК ГОСТИНИЦЫ В Седоне</button>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <p>
+            <label for="date-in">Дата заезда:</label>
+            <input type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="date-off">Дата выезда:</label>
+            <input type="text" name="date-off" id="date-off" placeholder="4 июля 2017">
+          </p>
+          <!-- Пока сделал тпкие поля, но есть подозрение, что делаются они не так -->
+          <p>
+            <label for="adults">Взрослые:</label>
+            <input type="number" name="adults" id="adults" min="1" step="1" value="2">
+          </p>
+          <p>
+            <label for="children">Дети:</label>
+            <input type="number" name="children" id="children" min="0" step="1" value="0">
+          </p>
+          <button class="button" type="submit">Найти</button>
+        </form>
+      </section>
       <div class="map">
         <h2 class="visually-hidden">Где мы находимся</h2>
-        <!-- Здесь будет карта -->
+        <img src="img/map.png" width="1200" height="470" alt="Карта">
       </div>
     </main>
 
@@ -112,6 +131,7 @@
         </a>
       </p>
     </footer>
+
   </div>
 
 </body>
