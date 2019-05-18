@@ -97,14 +97,19 @@
             <label for="date-off">Дата выезда:</label>
             <input type="text" name="date-off" id="date-off" placeholder="4 июля 2017">
           </p>
-          <!-- Пока сделал тпкие поля, но есть подозрение, что делаются они не так -->
           <p>
             <label for="adults">Взрослые:</label>
-            <input type="number" name="adults" id="adults" min="1" step="1" value="2">
+            <button class="button button-count" type="button">-</button>
+            <input class="amount" type="text" name="adults" id="adults" value="2">
+            <button class="button button-count" type="button">+</button>
+            <!-- <input type="number" name="adults" id="adults" min="1" step="1" value="2"> -->
           </p>
           <p>
             <label for="children">Дети:</label>
-            <input type="number" name="children" id="children" min="0" step="1" value="0">
+            <button class="button button-count" type="button">-</button>
+            <input class="amount" type="text" name="children" id="children" value="0">
+            <button class="button button-count" type="button">+</button>
+            <!-- <input type="number" name="children" id="children" min="0" step="1" value="0"> -->
           </p>
           <button class="button" type="submit">Найти</button>
         </form>
