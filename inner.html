@@ -28,28 +28,72 @@
       <form class="filter" action="https://echo.htmlacademy.ru" method="GET" oninput="priceoutput.value=price.value">
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <input type="checkbox" name="pool" id="pool" checked>
-          <label for="pool">Бассейн</label>
-          <input type="checkbox" name="parking" id="parking">
-          <label for="parking">Парковка</label>
-          <input type="checkbox" name="wifi" id="wifi">
-          <label for="wifi">Wi-Fi</label>
+          <ul>
+            <li class="filter-option">
+              <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="wifi" id="wifi">
+              <label for="wifi">Wi-Fi</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
-          <input type="checkbox" name="inn" id="inn" checked>
-          <label for="inn">Гостиница</label>
-          <input type="checkbox" name="motel" id="motel" checked>
-          <label for="motel">Мотель</label>
-          <input type="checkbox" name="apartments" id="apartments" checked>
-          <label for="apartments">Апартаменты</label>
+          <ul>
+            <li class="filter-option">
+              <input type="checkbox" name="inn" id="inn" checked>
+              <label for="inn">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="apartments" id="apartments" checked>
+              <label for="apartments">Апартаменты</label>
+            </li>
+          </ul>
         </fieldset>
-        <div>
-          <label>Стоимость в сутки (Р):</label>
-         <!-- Здесь будет диапазон, еще не придумала, как его сделать -->
+        <div class="range">
+          <label>
+            Стоимость в сутки (Р):
+            <p>
+              <input type="text" name="price" value="от 0">
+              <input type="text" name="price" value="До 3000">
+            </p>
+          </label>
+          <button class="button btn-range" type="button">
+            <img src="img/filter-button.svg" width="20" height="22" alt="от">
+          </button>
+          <button class="button btn-range" type="button">
+            <img src="img/filter-button.svg" width="20" height="22" alt="до">
+          </button>
         </div>
       </form>
       <button class="button filter-button" type="submit">Показать</button>
+      <p>Найдено: 3</p>
+      <div class="assortment">
+        <span>Сортировка:</span>
+        <ul>
+          <li class="sort-price"><a>По цене</a></li>
+          <li class="sort-type"><a href="#">По типу</a></li>
+          <li class="sort-rating"><a href="#">По рейтингу</a></li>
+        </ul>
+      </div>
+      <div class="icon-sort">
+        <button class="button btn-dir">
+          <img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">
+        </button>
+        <button class="button btn-dir">
+          <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка по возрастанию">
+        </button>
+      </div>
     </section>
 
     <h2 class="vision-hidden">Наши отели</h2>
@@ -96,7 +140,7 @@
             <a class="button" href="#">Забронировать</a>
           </div>
           <a class="catalog-item-image" href="#">
-            <img src="img/hotel-1.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+            <img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </a>
           <div class="catalog-item-rating">
             <!-- Здесь будут звездочки -->

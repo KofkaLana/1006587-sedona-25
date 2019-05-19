@@ -87,29 +87,33 @@
         <p>Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <button class="button" type="button">ПОИСК ГОСТИНИЦЫ В Седоне</button>
+        <a class="button button-open-form" href="search.html">ПОИСК ГОСТИНИЦЫ В Седоне</a>
         <form action="https://echo.htmlacademy.ru" method="GET">
           <p>
             <label for="date-in">Дата заезда:</label>
             <input type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
+            <button class="button" type="button">
+              <img src="img/calendar.svg" width="21" height="22" alt="Выбор даты заезда в календаре">
+            </button>
           </p>
           <p>
             <label for="date-off">Дата выезда:</label>
             <input type="text" name="date-off" id="date-off" placeholder="4 июля 2017">
+            <button class="button" type="button">
+              <img src="img/calendar.svg" width="21" height="22" alt="Выбор даты заезда в календаре">
+            </button>
           </p>
           <p>
             <label for="adults">Взрослые:</label>
             <button class="button button-count" type="button">-</button>
-            <input class="amount" type="text" name="adults" id="adults" value="2">
+            <input class="amount" type="number" name="adults" id="adults" min="1" max="30" step="1" value="2">
             <button class="button button-count" type="button">+</button>
-            <!-- <input type="number" name="adults" id="adults" min="1" step="1" value="2"> -->
           </p>
           <p>
             <label for="children">Дети:</label>
             <button class="button button-count" type="button">-</button>
-            <input class="amount" type="text" name="children" id="children" value="0">
+            <input class="amount" type="number" name="children" id="children" min="0" max="20" step="1" value="0">
             <button class="button button-count" type="button">+</button>
-            <!-- <input type="number" name="children" id="children" min="0" step="1" value="0"> -->
           </p>
           <button class="button" type="submit">Найти</button>
         </form>
