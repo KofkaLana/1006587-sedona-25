@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Туристический городок Sedona</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -29,7 +29,7 @@
 
     <main>
       <h1 class="vision-hidden">Подбор отеля</h1>
-      <section class="filtres">
+      <section class="filters">
         <form class="filter" action="https://echo.htmlacademy.ru" method="GET" oninput="priceoutput.value=price.value">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -69,8 +69,8 @@
             <label>
               Стоимость в сутки (Р):
               <p>
-                <input type="text" name="price" value="от 0">
-                <input type="text" name="price" value="До 3000">
+                <input type="text" name="price" value="ОТ 0">
+                <input type="text" name="price" value="ДО 3000">
               </p>
             </label>
             <button class="button btn-range" type="button">
@@ -80,23 +80,23 @@
               <img src="img/filter-button.svg" width="20" height="22" alt="до">
             </button>
           </div>
+          <button class="button filter-button" type="submit">Показать</button>
         </form>
-        <button class="button filter-button" type="submit">Показать</button>
-        <p>Найдено: 3</p>
+        <p class="info">Найдено: 3</p>
         <div class="assortment">
           <span>Сортировка:</span>
-          <ul>
-            <li class="sort-price"><a>По цене</a></li>
-            <li class="sort-type"><a href="#">По типу</a></li>
-            <li class="sort-rating"><a href="#">По рейтингу</a></li>
+          <ul class="assortment-list">
+            <li class="assortment-item-current sort-price">По цене</li>
+            <li class="assortment-item sort-type"><a href="#">По типу</a></li>
+            <li class="assortment-item sort-rating"><a href="#">По рейтингу</a></li>
           </ul>
         </div>
         <div class="icon-sort">
           <button class="button btn-dir">
-            <img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">
+            <img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка по возрастанию">
           </button>
           <button class="button btn-dir">
-            <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка по возрастанию">
+            <img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">
           </button>
         </div>
       </section>
@@ -109,8 +109,8 @@
               <h3><a href="#">Amara Resort & Spa</a></h3>
               <p>Гостиница</p>
               <p>От 4000 Р.</p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button btn-about" href="#">Подробнее</a>
+              <a class="button btn-booking" href="#">Забронировать</a>
             </div>
             <a class="catalog-item-image" href="#">
               <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
@@ -125,8 +125,8 @@
               <h3><a href="#">Desert Quail Inn</a></h3>
               <p>Мотель</p>
               <p>От 3000 Р.</p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button btn-about" href="#">Подробнее</a>
+              <a class="button btn-booking" href="#">Забронировать</a>
             </div>
             <a class="catalog-item-image" href="#">
               <img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
@@ -141,8 +141,8 @@
               <h3><a href="#">Villas at Poco Diablo</a></h3>
               <p>Апартаменты</p>
               <p>От 2000 Р.</p>
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button btn-about" href="#">Подробнее</a>
+              <a class="button btn-booking" href="#">Забронировать</a>
             </div>
             <a class="catalog-item-image" href="#">
               <img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
@@ -160,9 +160,9 @@
       <span class="info">#visitSEDONA</span>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="button social-button" href="#">Вконтакте</a></li>
+          <li><a class="button social-button" href="#">Фейсбук</a></li>
+          <li><a class="button social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
       <p class="footer-copyright">

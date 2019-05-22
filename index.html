@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Туристический городок Sedona</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -28,12 +28,19 @@
 
     <main>
       <h1 class="visually-hidden">Отдых в Седоне</h1>
-      <p>Седона — небольшой городок в Аризоне,
-        заслуживающий большего!</p>
+      <div class="grand-view">
+        <div class="pic">
+          <!-- контейнер под картинку -->
+        </div>
+        <div class="paragraf">
+          <p class="info">Седона — небольшой городок в Аризоне,
+            заслуживающий большего!</p>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </div>
 
       <section class="reasons">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ol class="features-list">
           <li class="feature-item-pic">
             <p class="feature-item-image">
@@ -92,33 +99,33 @@
         </p>
         <a class="button button-open-form" href="search.html">ПОИСК ГОСТИНИЦЫ В Седоне</a>
         <form class="modal-search" action="https://echo.htmlacademy.ru" method="GET">
-          <p>
+          <p class="search-item">
             <label for="date-in">Дата заезда:</label>
             <input type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
-            <button class="button" type="button">
+            <button class="button button-form" type="button">
               <img src="img/calendar.svg" width="21" height="22" alt="Выбор даты заезда в календаре">
             </button>
           </p>
-          <p>
+          <p class="search-item">
             <label for="date-off">Дата выезда:</label>
             <input type="text" name="date-off" id="date-off" placeholder="4 июля 2017">
-            <button class="button" type="button">
+            <button class="button button-form" type="button">
               <img src="img/calendar.svg" width="21" height="22" alt="Выбор даты заезда в календаре">
             </button>
           </p>
-          <p>
+          <p class="search-item">
             <label for="adults">Взрослые:</label>
-            <button class="button button-count" type="button">-</button>
+            <button class="button button-form button-count" type="button">-</button>
             <input class="amount" type="number" name="adults" id="adults" min="1" max="30" step="1" value="2">
-            <button class="button button-count" type="button">+</button>
+            <button class="button button-form button-count" type="button">+</button>
           </p>
-          <p>
+          <p class="search-item">
             <label for="children">Дети:</label>
-            <button class="button button-count" type="button">-</button>
+            <button class="button button-form button-count" type="button">-</button>
             <input class="amount" type="number" name="children" id="children" min="0" max="20" step="1" value="0">
-            <button class="button button-count" type="button">+</button>
+            <button class="button button-form button-count" type="button">+</button>
           </p>
-          <button class="button" type="submit">Найти</button>
+          <button class="button button-search" type="submit">Найти</button>
         </form>
       </section>
       <div class="map">
@@ -131,9 +138,9 @@
       <span class="info">#visitSEDONA</span>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="button social-button" href="#">Вконтакте</a></li>
+          <li><a class="button social-button" href="#">Фейсбук</a></li>
+          <li><a class="button social-button" href="#">Инстаграм</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
