@@ -430,9 +430,10 @@ svg path {
   background-color: transparent;
 }
 
-/* .btn-range:hover {}
-  /* увеличение кнопки на 2px */
-
+.btn-range:hover {
+  transform: scale(1.1);
+}
+  
 .filter-button:hover {
   color: #000000;
   background-color: #ffffff;
