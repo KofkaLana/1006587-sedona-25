@@ -215,8 +215,8 @@ a {
 
 .btn-inner {
   display: inline-block;
-  width: 142px;
-  height: 27px;
+  /* width: 142px;
+  height: 27px; */
   font-size: 14px;
   line-height: 21px;
 }
@@ -224,13 +224,14 @@ a {
 .btn-blue {
   /* width: 110px;
   height: 27px; */
-
+  padding: 7px 16px;
   background-color: #81b3d2
 }
 
 .btn-brown {
   /* width: 142px;
   height: 27px;  */
+  padding: 7px 16px;
   background-color: #766357;
 }
 
