@@ -101,7 +101,7 @@ a {
   background-size: auto, auto, cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   /* background-position пока подбирала на глаз, не смогла придумать как по другому добиться правильного положения */
-  background-position: left 452px, bottom, bottom;
+  background-position: left 454px, bottom, bottom;
 }
 
 .grand-view img {
