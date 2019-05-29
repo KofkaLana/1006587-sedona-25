@@ -89,38 +89,27 @@ a {
 }
 
 .grand-view {
-  position: relative;
   padding: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: flex-end; */
-  min-height: 726px;
+  min-height: 510px;
   background-color: #e3f0f8;
-  background-image: url("../img/polygon.svg"), url("../img/rect.jpg"), url("../img/background.jpg");
-  background-size: auto, auto, cover;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-image: url("../img/polygon.svg"), url("../img/background.jpg");
+  background-size: auto, cover;
+  background-repeat: no-repeat;
   /* background-position пока подбирала на глаз, не смогла придумать как по другому добиться правильного положения */
-  background-position: left 454px, bottom, bottom;
+  background-position: bottom, 0 -56px;
+  background-origin: content-box;
 }
 
 .grand-view img {
-  margin-top: 75px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 75px;
 }
-
 
 .paragraf {
-  position: absolute;
-  bottom: 0;
-  left: 25%;
-  margin-top: 80px;
-  padding-top: 40px;
-  padding-bottom: 50px;
-}
-
-.paragraf p {
-  max-width: 580px;
+  padding: 40px;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .headline {
@@ -216,7 +205,7 @@ a {
 .btn-inner {
   display: inline-block;
   vertical-align: middle;
-  padding: 7px 16px;
+  padding: 3px 17px;
   font-size: 14px;
   line-height: 21px;
 }
@@ -293,8 +282,7 @@ a {
   display: inline-block;
   box-sizing: border-box;
   width: 570px;
-  padding-top: 35px;
-  padding-bottom: 33px;
+  padding: 30px 20px;
 }
 
 .button-search {
