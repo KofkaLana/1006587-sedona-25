@@ -129,18 +129,21 @@
               </svg>
             </button>
           </p>
-          <p class="search-item">
+          <div class="people">
+            <p class="search-item">
             <label for="adults">Взрослые:</label>
-            <button class="button button-form button-count" type="button">-</button>
+            <button class="button button-form btn-minus" type="button">-</button>
             <input class="amount" type="number" name="adults" id="adults" min="1" max="30" step="1" value="2">
-            <button class="button button-form button-count" type="button">+</button>
+            <button class="button button-form btn-plus" type="button">+</button>
           </p>
-          <p class="search-item">
+          <p class="search-item child">
             <label for="children">Дети:</label>
-            <button class="button button-form button-count" type="button">-</button>
+            <button class="button button-form btn-minus" type="button">-</button>
             <input class="amount" type="number" name="children" id="children" min="0" max="20" step="1" value="0">
-            <button class="button button-form button-count" type="button">+</button>
+            <button class="button button-form btn-plus" type="button">+</button>
           </p>
+          </div>
+          
           <button class="button button-search btn-blue" type="submit">Найти</button>
         </form>
       </section>
