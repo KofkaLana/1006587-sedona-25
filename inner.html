@@ -21,9 +21,8 @@
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-          <li></li>
           <li><a href="#">Карта штата</a></li>
-          <li class="site-navigation-current">Гостиницы</li>
+          <li class="site-navigation-current"><a>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -37,15 +36,15 @@
               <legend>Инфраструктура:</legend>
               <ul>
                 <li class="filter-option">
-                  <input type="checkbox" name="pool" id="pool" checked>
+                  <input class="visually-hidden filter-input" type="checkbox" name="pool" id="pool" checked>
                   <label for="pool">Бассейн</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" name="parking" id="parking">
+                  <input class="visually-hidden filter-input" type="checkbox" name="parking" id="parking">
                   <label for="parking">Парковка</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" name="wifi" id="wifi">
+                  <input class="visually-hidden filter-input" type="checkbox" name="wifi" id="wifi">
                   <label for="wifi">Wi-Fi</label>
                 </li>
               </ul>
@@ -54,46 +53,49 @@
               <legend>Тип жилья:</legend>
               <ul>
                 <li class="filter-option">
-                  <input type="checkbox" name="inn" id="inn" checked>
+                  <input class="visually-hidden filter-input" type="checkbox" name="inn" id="inn" checked>
                   <label for="inn">Гостиница</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" name="motel" id="motel" checked>
+                  <input class="visually-hidden filter-input" type="checkbox" name="motel" id="motel" checked>
                   <label for="motel">Мотель</label>
                 </li>
                 <li class="filter-option">
-                  <input type="checkbox" name="apartments" id="apartments" checked>
+                  <input class="visually-hidden filter-input" type="checkbox" name="apartments" id="apartments" checked>
                   <label for="apartments">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <div class="range-column">
-              <div class="range">
-                <label>
-                  Стоимость в сутки (Р):
-                  <p>
-                    <input type="text" name="price" value="ОТ 0">
-                    <input type="text" name="price" value="ДО 3000">
-                  </p>
-                </label>
-                <button class="button btn-range" type="button">
-                  <!-- <img src="img/filter-button.svg" width="20" height="22" alt="от"> -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                    <path opacity=".3" fill="#ABABAB"
-                      d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
-                    <circle fill="#FFF" cx="10" cy="10" r="10" />
-                    <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg>
-                </button>
-                <button class="button btn-range" type="button">
-                  <!-- <img src="img/filter-button.svg" width="20" height="22" alt="до"> -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                    <path opacity=".3" fill="#ABABAB"
-                      d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
-                    <circle fill="#FFF" cx="10" cy="10" r="10" />
-                    <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg>
-                </button>
+              <div class="filter-range">
+                <p>Стоимость в сутки (р):</p>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <button class="button btn-range btn-range-min" type="button">
+                    <!-- <img src="img/filter-button.svg" width="20" height="22" alt="от"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                      <path opacity=".3" fill="#ABABAB"
+                        d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
+                      <circle fill="#FFF" cx="10" cy="10" r="10" />
+                      <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg>
+                  </button>
+                  <button class="button btn-range btn-range-max" type="button">
+                    <!-- <img src="img/filter-button.svg" width="20" height="22" alt="до"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                      <path opacity=".3" fill="#ABABAB"
+                        d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
+                      <circle fill="#FFF" cx="10" cy="10" r="10" />
+                      <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg>
+                  </button>
+                </div>
+                <button class="button filter-button" type="submit">Показать</button>
               </div>
-              <button class="button filter-button" type="submit">Показать</button>
             </div>
           </div>
         </form>
@@ -219,7 +221,7 @@
       </div>
       <div class="main-footer-col footer-copyright">
         <span>Website by</span>
-        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="blank">
           <!-- <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Acadamy"> -->
           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
             <title>logo-htmlacademy-small1</title>
