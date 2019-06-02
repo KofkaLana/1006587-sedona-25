@@ -49,7 +49,7 @@
             <div class="feature-item-image">
               <img src="img/view-1.jpg" width="800" height="260" alt="Вид Седоны">
             </div>
-            
+
             <ul class="more-features">
               <li class="feature-item-info more-features-info feature-home">
                 <h3>Жильё</h3>
@@ -70,7 +70,8 @@
               <img src="img/view-2.jpg" width="800" height="260" alt="Мост Дьявола">
             </div>
             <div class="feature-item-info">
-              <h3>Там есть Мост дьявола</h3>
+              <h3>Там есть <br>
+                Мост дьявола</h3>
               <span>- №2 -</span>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
@@ -79,19 +80,19 @@
             <h3>Небольшая площадь</h3>
             <span>- №3 -</span>
             <p>Все достопримечательности
-              находятся очень близко</p>
+              находятся&nbsp;очень близко</p>
           </li>
           <li class="feature-item-info">
             <h3>Красивая дорога</h3>
             <span>- №4 -</span>
             <p>Ехать в Седону из Лас-Вегаса совсем
-              не скучно!</p>
+              не&nbsp;скучно!</p>
           </li>
           <li class="feature-item-info">
             <h3>Мало туристов</h3>
             <span>- №5 -</span>
             <p>Большинство едет в гранд каньон
-              и толпится там</p>
+              и&nbsp;толпится там</p>
           </li>
           </0l>
       </section>
@@ -131,19 +132,22 @@
           </p>
           <div class="people">
             <p class="search-item">
-            <label for="adults">Взрослые:</label>
-            <button class="button button-form btn-minus" type="button">-</button>
-            <input class="amount" type="number" name="adults" id="adults" min="1" max="30" step="1" value="2">
-            <button class="button button-form btn-plus" type="button">+</button>
-          </p>
-          <p class="search-item child">
-            <label for="children">Дети:</label>
-            <button class="button button-form btn-minus" type="button">-</button>
-            <input class="amount" type="number" name="children" id="children" min="0" max="20" step="1" value="0">
-            <button class="button button-form btn-plus" type="button">+</button>
-          </p>
+              <label for="adults">Взрослые:</label>
+              <div class="search-item-wrapper">
+                <button class="button button-form btn-minus" type="button">-</button>
+                <input class="amount" type="number" name="adults" id="adults" min="1" max="30" step="1" value="2">
+                <button class="button button-form btn-plus" type="button">+</button>
+              </div>
+            </p>
+            <p class="search-item child">
+              <label for="children">Дети:</label>
+              <div class="search-item-wrapper">
+                <button class="button button-form btn-minus" type="button">-</button>
+                <input class="amount" type="number" name="children" id="children" min="0" max="20" step="1" value="0">
+                <button class="button button-form btn-plus" type="button">+</button>
+              </div>
+            </p>
           </div>
-          
           <button class="button button-search btn-blue" type="submit">Найти</button>
         </form>
       </section>
@@ -153,12 +157,12 @@
       </div>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-footer-col">
+    <footer class="footer main-footer">
+      <div class="footer-col">
         <span class="info">#visitSEDONA</span>
       </div>
 
-      <div class="main-footer-col footer-social">
+      <div class="footer-col footer-social">
         <ul>
           <li>
             <a class="button social-button btn-blue" href="#">
@@ -185,12 +189,12 @@
                 viewBox="0 0 20 16">
                 <path fill="#FFF"
                   d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
-                </svg>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
-      <div class="main-footer-col footer-copyright">
+      <div class="footer-col footer-copyright">
         <span>Website by</span>
         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="blank">
           <!-- <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Acadamy"> -->
