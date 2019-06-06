@@ -121,8 +121,8 @@ a {
 .grand-view {
   padding: 0px;
   min-height: 510px;
-  background-color: #e3f0f8;
-  background-image: url("../img/polygon.svg"), url("../img/background.jpg");
+  background-color: #698bb1;
+  background-image: url("../img/polygon.svg"), url("../img/background1.jpg");
   background-size: 1200px 57px, cover;
   background-repeat: no-repeat;
   background-position: bottom, 0 -56px;
