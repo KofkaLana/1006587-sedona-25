@@ -205,6 +205,23 @@
 
   </div>
 
+  <script>
+    var change=document.querySelector(".button-open-form");
+    var popup=document.querySelector(".modal-search");
+    var form=popup.querySelector("form"); 
+   
+    change.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.toggle("modal-search-close");
+    });
+
+    form.addEventListener("submit", function(evt) {
+      evt.preventDefault();
+      consol.log("Отправляем форму");
+    })
+    
+  </script>
+
 </body>
 
 </html>

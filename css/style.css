@@ -345,6 +345,10 @@ a {
           box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
+.modal-search-close {
+  display: none
+}
+
 .modal-search p{
   margin: 0;
   padding-bottom: 29px;
@@ -629,7 +633,7 @@ svg.icon path {
 }
 
 .filter legend {
-  color: inherit;
+  color: inherit; /*Для ie*/
   margin-bottom: 25px;
 }
 
