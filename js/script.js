@@ -10,7 +10,6 @@ var storageA = localStorage.getItem("adults");
 var storageC = localStorage.getItem("children");
 var isStorageSupport = true;
 
-  
 try {
     storageA = localStorage.getItem("adults");
     storageC = localStorage.getItem("children");
@@ -31,7 +30,6 @@ change.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function(evt) {
-    evt.preventDefault();
     if (!datein.value || !dateoff.value) {
         evt.preventDefault();
         popup.classList.toggle("modal-search-error");
