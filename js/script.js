@@ -21,7 +21,8 @@ catch (err) {
 
 change.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.toggle("modal-search-close");
+    popup.classList.toggle("modal-search-show");
+    popup.classList.remove("modal-search-error");
     
     if (storageA && storageC) {
         adults.value = storageA;
@@ -33,7 +34,7 @@ form.addEventListener("submit", function(evt) {
     evt.preventDefault();
     if (!datein.value || !dateoff.value) {
         evt.preventDefault();
-            console.log("Нужно ввести даты заезда и выезда");
+        popup.classList.toggle("modal-search-error");
     }
     else {
         if (isStorageSupport) {
