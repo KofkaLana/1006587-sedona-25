@@ -137,7 +137,7 @@ a {
 }
 
 .paragraf {
-  padding: 60px 0 23px;
+  padding: 58px 0 25px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -624,7 +624,7 @@ svg.icon path {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  padding: 30px 20px;
+  padding: 28px 20px;
 
   z-index: 2;
 }
@@ -659,7 +659,7 @@ svg.icon path {
 .main-footer {
   position: absolute;
   bottom: 0;
-  padding: 36px 0;
+  padding: 34px 0;
 }
 
 .footer-col {
@@ -677,6 +677,7 @@ svg.icon path {
 .footer-social ul {
   margin: 0;
   padding: 0;
+  padding-left: 3px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,6 +723,7 @@ svg.icon path {
 
 .academy-logo {
   margin-left: 8px;
+  margin-top: 5px;
   width: 114px;
   height: 41px;
 }
