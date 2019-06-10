@@ -16,8 +16,8 @@ a{text-decoration:none}
 .site-navigation-current a{color:#766357}
 .grand-view{padding:0;min-height:510px;background-color:#698bb1;background-image:url(../img/polygon.svg),url(../img/background.jpg);background-size:1200px 57px,cover;background-repeat:no-repeat;background-position:bottom,0 -56px}
 .grand-view img{width:459px;height:353px;margin:0 auto;padding-top:75px}
-.paragraf{padding:58px 0 25px;text-align:center;background-color:#fff}
-.paragraf p{width:580px;margin:0 auto;margin-bottom:30px}
+.paragrph{padding:58px 0 25px;text-align:center;background-color:#fff}
+.paragraph p{width:580px;margin:0 auto;margin-bottom:30px}
 .info{font-size:21px;line-height:26px;font-weight:700}
 .features-list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0;padding:0;list-style:none;background-color:#eee}
 .feature-item-pic{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;color:#fff;background-color:#81b3d2}
@@ -95,11 +95,11 @@ svg.social path,svg.icon path{fill:inherit}
 .main-footer{position:absolute;bottom:0;padding:34px 0}
 .footer-col{width:400px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-negative:0;flex-shrink:0}
 .footer-social ul{margin:0;padding:0;padding-left:3px;list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
-.footer-social li{padding-right:5px;padding-bottom:5px}
+.footer-social li{padding-right:5px}
 .social-button{width:46px;height:48px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;fill:#fff}
 .social-button:active{fill:rgba(255,255,255,0.3);color:rgba(255,255,255,0.3)}
 .footer-copyright{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-.academy-logo{margin-left:8px;margin-top:5px;width:114px;height:41px}
+.academy-logo{margin-left:9px;margin-top:3px;width:114px;height:41px}
 .footer-copyright a:hover,.footer-copyright a:focus{fill:#81b3d2}
 .footer-copyright a:active{fill:#bdbbbc}
 .filter{margin:0;padding:0 70px;color:#fff;background-color:#355469;background-image:url(../img/filter-background.jpg)}
@@ -144,10 +144,10 @@ svg.social path,svg.icon path{fill:inherit}
 .sort-current{stroke:#81b3d2;fill:#81b3d2}
 .assortment-item-current{color:#81b3d2}
 .assortment-list a{color:rgba(0,0,0,0.3);border-bottom:1px dotted #81b3d2}
-.assortment-list a:hover,.assortment-list a:focus{color:#81b3d2}
-.assortment-list a:active{color:#000;text-decoration:none}
+.assortment-list a[href]:hover,.assortment-list a[href]:focus{color:#81b3d2}
+.assortment-list a[href]:active{color:#000;border-color:#fff}
 .catalog-list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:0;padding:0;list-style:none}
-.catalog-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:25px 73px 28px;border-top:2px solid #e5e5e5}
+.catalog-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;padding:25px 73px 28px;border-top:1px solid #e5e5e5}
 .catalog-item:last-child{border-bottom:2px solid #e5e5e5}
 .catalog-item-image{display:inline-block;vertical-align:middle;width:135px;margin-top:3px;margin-right:30px;-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1;-ms-flex-negative:0;flex-shrink:0}
 .catalog-item-hotel a.hotel{color:#000}
