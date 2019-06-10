@@ -16,7 +16,7 @@ a{text-decoration:none}
 .site-navigation-current a{color:#766357}
 .grand-view{padding:0;min-height:510px;background-color:#698bb1;background-image:url(../img/polygon.svg),url(../img/background.jpg);background-size:1200px 57px,cover;background-repeat:no-repeat;background-position:bottom,0 -56px}
 .grand-view img{width:459px;height:353px;margin:0 auto;padding-top:75px}
-.paragrph{padding:58px 0 25px;text-align:center;background-color:#fff}
+.paragraph{padding:58px 0 25px;text-align:center;background-color:#fff}
 .paragraph p{width:580px;margin:0 auto;margin-bottom:30px}
 .info{font-size:21px;line-height:26px;font-weight:700}
 .features-list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0;padding:0;list-style:none;background-color:#eee}

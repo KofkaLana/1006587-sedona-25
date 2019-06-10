@@ -136,7 +136,7 @@ a {
   padding-top: 75px;
 }
 
-.paragrph {
+.paragraph {
   padding: 58px 0 25px;
   text-align: center;
   background-color: #ffffff;
@@ -640,7 +640,6 @@ svg.icon path {
 .map iframe {
   border: none;
 }
-
 
 .footer {
   display: -webkit-box;
