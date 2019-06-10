@@ -688,7 +688,6 @@ svg.icon path {
 
 .footer-social li {
   padding-right: 5px;
-  padding-bottom: 5px;
 }
 
 .social-button {
@@ -722,8 +721,8 @@ svg.icon path {
 }
 
 .academy-logo {
-  margin-left: 8px;
-  margin-top: 5px;
+  margin-left: 9px;
+  margin-top: 3px;
   width: 114px;
   height: 41px;
 }
@@ -1049,14 +1048,14 @@ svg.icon path {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.assortment-list a:hover, 
-.assortment-list a:focus {
+.assortment-list a[href]:hover, 
+.assortment-list a[href]:focus {
   color: #81b3d2;
 }
 
-.assortment-list a:active {
+.assortment-list a[href]:active {
   color: #000000;
-  text-decoration: none;
+  border-color: #ffffff;
 }
 
 .catalog-list {
@@ -1080,7 +1079,7 @@ svg.icon path {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 25px 73px 28px;
-  border-top: 2px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 
 .catalog-item:last-child {
